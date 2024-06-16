@@ -1,0 +1,159 @@
+.searchPage{
+    width:100%;
+    position:sticky;
+    overflow-y:scroll;
+    height:95vh;
+}
+.searchTracks{
+    font-size:1rem;
+    color:white;
+}
+.searchHeading{
+    color:white;
+    font-size: 3rem;
+}
+.searchBar{
+    height:100px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchBar input{
+    padding:0.6rem 3rem;
+    border-radius: 50px;
+    border:none;
+    width:500px;
+}
+.searchBar input:focus{
+    outline:none;
+}
+.searchArtist{
+    height:100%;
+    width: 40%;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    margin-left:5px;
+    border-radius:10px;
+    transition:0.3s;
+
+}
+.searchArtist:hover{
+    background-color: rgba(90, 89, 89, 0.307);
+
+}
+
+.artistImage{
+    height:80%;
+    width:80%;
+}
+.searchArtist img{
+    object-fit:cover;
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+}
+.artistName{
+   color:white; 
+   font-weight: 700;
+   font-size:1.5rem;
+}
+
+.firstSegment{
+    height:400px;
+    width:100%;
+    display: flex;
+}
+
+.searchTracks{
+    width:60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:1rem;
+}
+.eachTrack{
+    width:100%;
+    display: flex;
+    align-items:center;
+    transition:0.3s;
+    padding:0.5rem 2rem;
+    cursor:pointer;
+
+}
+.trackAlbum{
+    margin-left:2rem;
+    font-size:0.9rem;
+    color:grey;
+}
+.eachTrack img{
+    height:70px;
+    width:70px;
+}
+.eachTrack:hover{
+    background-color: rgba(65, 65, 65, 0.936);
+}
+
+.searchPlaylist, .searchAlbum{
+    height:330px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    gap:12px;
+    color:white;
+
+
+}
+.eachPlaylist, .eachAlbum{
+    height:100%;
+    width:18%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius:10px;
+    color:rgb(171, 170, 170);
+    font-size:0.9rem;
+    transition:0.3s;
+
+}
+
+.eachPlaylist:hover, .eachAlbum:hover{
+    background-color:rgba(90, 89, 89, 0.307);
+}
+.eachPlaylist img, .eachAlbum img{
+    width:95%;
+    height:250px;
+    object-fit: cover;
+    border-radius:10px;
+    padding-top:5px;
+    margin-bottom:5px;
+}
+.searchHeading{
+    padding:1rem 2rem;
+    font-weight:500;
+}
+.eachArtist img{
+    height:230px;
+    width:250px;
+    border-radius:50%;
+}
+.searchIcon{
+    color:white !important;
+}
+button.enterButton{
+    background-color:rgba(90, 88, 88, 0.568);
+    border:none;
+    border-radius:50%;
+    height:50px;
+    width:50px;
+    margin-left:10px;
+    transition:0.3s;
+}
+
+.enterButton:hover{
+    height:55px;
+    width:55px;
+    background-color:rgba(133, 132, 132, 0.568);
+}

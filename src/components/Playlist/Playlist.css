@@ -1,0 +1,73 @@
+.playlist{
+    width:100%;
+    height:70px;
+    display: flex;
+    color:white;
+    
+    transition:0.3s;
+
+    align-items: center;
+}
+.playlist:hover{
+    background-color: rgb(51, 51, 51);
+    cursor:pointer
+}
+.imageContainer{
+    margin:8px;
+    height:60px;
+    width:60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius: 5px;
+}
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    margin-left:10px;
+    justify-content: center;
+}
+.name{
+    font-weight: 600;
+}
+.author{
+    font-weight: 400;
+    font-size: 15px;
+    opacity:0.5;
+}
+
+/* For Webkit Browsers (Chrome, Safari, Edge) */
+*::-webkit-scrollbar-button {
+    display: none; /* Hide the scrollbar buttons */
+  }
+  
+  /* Set the scrollbar width to 20px */
+  *::-webkit-scrollbar {
+    width: 20px;
+    height: 20px; /* For horizontal scrollbar, if needed */
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: rgb(94, 94, 94);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(95, 95, 95);
+    border-radius: 10px; /* Optional: To make the scrollbar round */
+    border: 3px solid rgb(34, 34, 34); /* Optional: Add padding around the thumb */
+  }
+  
+  /* For Firefox */
+  * {
+    scrollbar-width: auto; /* Cannot set to specific pixel value, using auto */
+    scrollbar-color: rgb(95, 95, 95) rgb(34, 34, 34);
+  }
+  
+  
+  

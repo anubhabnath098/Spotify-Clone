@@ -1,0 +1,12 @@
+
+.podcast{
+    position:sticky;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+.podcast1{
+    height:500px;
+}
+.card1{
+    overflow:hidden;
+}

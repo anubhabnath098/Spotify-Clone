@@ -1,0 +1,33 @@
+.playing{
+    width:100%;
+    background-color: black;
+    color:white;
+    position:fixed;
+    bottom:0px;
+    display: flex;
+
+}
+.track{
+    width:45%;
+    height:70px;
+    display: flex;
+    align-items: center;
+}
+.trackImg{
+    height:70%;
+    width:10%;
+    object-fit: cover;
+    margin:0 1rem;
+    border-radius: 7px;
+}
+.trackInfo{
+    font-size:0.8rem;
+    color:rgb(196, 192, 192);
+}
+.songName{
+    font-weight: 700;
+    font-size:0.9rem;
+    color:white
+}
+
+

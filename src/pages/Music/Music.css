@@ -1,0 +1,5 @@
+.musicContainer{
+    position:sticky;
+    overflow-y: scroll;
+    overflow-x:hidden;
+}

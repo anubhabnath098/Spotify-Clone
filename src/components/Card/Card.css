@@ -1,0 +1,82 @@
+.card{
+    width:20%;
+    display: flex;
+    height:300px;
+    flex-direction: column;
+    border-radius: 7px;
+    transition:0.3s;
+}
+.cardImage{
+    height:75%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.img{
+    width:93%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 7px;
+    margin-top:6%;
+}
+
+.Cardtext{
+    width:93%;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left:2px;
+    overflow: hidden;
+    cursor:pointer;
+}
+.title1{
+    font-weight: 600;
+    margin-left:10px;
+}
+.author1{
+    margin-left:10px;
+    font-weight: 400;
+    font-size: 15px;
+    opacity:0.5;
+    
+}
+
+.card:hover .play{
+    height:50px;
+    width:50px;
+    background-color: #1DB954;
+    border-radius:50%;
+    position:absolute;
+    right:15px;
+    z-index:1;
+    bottom:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: -2px 10px 20px -5px rgba(148,145,148,1);
+    -moz-box-shadow: -2px 10px 20px -5px rgba(148,145,148,1);
+    box-shadow: -1px 7px 7px -5px rgb(34, 34, 34);
+}
+.card:hover{
+    background-color: rgb(60, 60, 60);
+}
+
+.play-button{
+    color: rgb(34, 34, 34);
+    display:hidden !important;
+    position:absolute;
+    z-index: -1;
+}
+.song-label:hover .play-button{
+    color:black;
+}
+.title{
+    text-align: center;
+}
+.play{
+    display:hidden;
+}
+

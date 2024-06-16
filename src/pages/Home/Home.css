@@ -1,0 +1,59 @@
+body{
+    background-color: black;
+    overflow-x:hidden;
+}
+
+.homePage{
+    position:sticky;
+    overflow-y:scroll;
+    overflow-x: hidden;
+}
+.Playlist{
+    display: flex;
+    padding:5px;
+    
+}
+.labelContainer{
+    margin-top:10px;
+    margin-bottom:20px;
+}
+.PlaylistContainer{
+    width:100%;
+    height:370px;
+    padding:10px;
+    position:relative;
+
+
+}
+.heading{
+    margin-top:20px;
+    color:white;
+    font-weight: 700;
+    font-size:25px;
+    margin-left:10px;
+}
+.route{
+    position:relative;
+    top:150px;
+}
+.topbar{
+    border-radius:7px;
+}
+.pages{
+    display: flex;
+}
+.frontPage{
+    width:97.5%;
+    height:97vh;
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    top:10px;
+    border-radius:7px;
+    align-items: center;
+    background-color: rgb(34, 34, 34);
+    margin-right:7px;
+
+}
+
+

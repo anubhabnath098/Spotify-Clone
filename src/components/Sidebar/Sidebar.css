@@ -1,0 +1,112 @@
+.sidebar{
+    width:30%;
+    background-color:black;
+    height:100vh;
+}
+.sidebarWrapper{
+    display: flex;
+    flex-direction: column;
+}
+.sidebarTop{
+    width:95%;
+    height:120px;
+    background-color: rgb(34, 34, 34);
+    border-radius: 7px;
+    margin:2.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:15px;
+}
+
+.sidebarCenter{
+    width:95%;
+    height:100px;
+    background-color: rgb(34, 34, 34);
+    border-radius:7px 7px 0 0;
+    margin:0 2.5%;
+    font-weight: 620;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:10px;
+    
+}
+.sidebarCenterWrapper{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.buttons{
+    display: flex;
+    gap:10px;
+    margin-left:10px;
+}
+
+
+.sidebarBottom{
+    width:95%;
+    position:sticky;
+    background-color: rgb(34, 34, 34);
+    height:calc(100vh - 250px);
+    border-radius:0 0 7px 7px;
+    margin:2.5%;
+    margin-top:0;
+    overflow-y:scroll;
+    overflow-x: hidden;
+}
+
+.sidebarToplabel{
+    margin-left:10px;
+}
+
+.btn1{
+    opacity: 0.7;
+}
+
+.activated{
+    font-weight: 650;
+    opacity: 1;
+}
+
+.activated,.btn1{
+    background-color: none;
+    color:white;
+}
+.home,.search{
+    margin-left:10px;
+    font-weight: 620;
+    font-size:1rem;
+}
+.icon{
+    width:40px;
+    height:40px;
+}
+
+.directions{
+    display: flex;
+    gap:20px;
+    margin-right:5px;
+    margin-top:5px;
+
+}
+.library{
+    display: flex;
+    gap:7px;
+    margin:10px;
+}
+.action{
+    transition:0.3s;
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.action:hover{
+    background-color: rgb(27, 27, 27);
+
+}

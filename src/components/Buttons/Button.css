@@ -1,0 +1,21 @@
+/* Button.css */
+
+.btn {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 3px 14px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    font-weight: 500;
+  }
+  
+  /* Style for the active link */
+  .active {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    font-weight: 400;
+  }
+  

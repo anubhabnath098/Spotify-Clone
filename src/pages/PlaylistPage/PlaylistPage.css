@@ -1,0 +1,86 @@
+
+.playlistPageContainer{
+    position:sticky;
+    height:95vh;
+    overflow-y: scroll;
+    width:100%;
+    overflow-x: hidden;
+}
+.playlistPage{
+    margin:0 2rem;
+    display: flex;
+    align-items:center;
+    gap:2rem;
+    height:300px;
+    overflow:hidden;
+    padding-left: 4rem;
+    padding-top:2rem;
+    background-color:  rgb(34, 34, 34);
+    width:100%;
+
+}
+.ownerName{
+    font-weight: 700;
+}
+.image2 img{
+    height: 15rem;
+    box-shadow: rgba(0,0,0,0.25) 0px 25px 50px -12px;
+    margin-right:3px;
+    border-radius: 5px;
+}
+.details{
+    display: flex;
+    flex-direction:column;
+    color:#e0dede;
+
+}
+.title2{
+    color:white;
+    font-size: 4rem;
+    font-weight: 700;
+}
+.list .header_row{
+    display:grid;
+    grid-template-columns: 0.3fr 3.25fr 2fr 0.1fr;
+    color:#dddcdc;
+    margin:1rem 0 0 0;
+    position: sticky;
+    top:15vh;
+    padding: 1rem 3rem;
+    transition: 0.3s ease-in-out;
+
+}
+.tracks{
+    margin:0 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom:5rem;
+
+}
+.row{
+    padding: 0.5rem 1rem;
+    display: grid;
+    grid-template-columns: 0.3fr 2.8fr 2fr 0.1fr;
+    transition:0.2s;
+    width:100%;
+    cursor:pointer;
+    
+}
+.row:hover{
+    background-color: rgb(51, 51, 51);
+}
+.col{
+    display: flex;
+    align-items:center;
+    color:#dddcdc;
+
+}
+.col img{
+    height:40px;
+
+}
+
+.info{
+    display: flex;
+    flex-direction:column;
+}
