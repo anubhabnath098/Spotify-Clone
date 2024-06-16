@@ -39,6 +39,22 @@ You can now make changes and use the app to your wish
 
 # Screenshots
 
-![Home Page](image.png)
-![Playlist/ album/ Artist Page](image2.png)
-![Search Page](image3.png)
+#### Home Page
+![Home Page](public/assets/ss1.png)
+
+#### Playlist Page
+![Playlist](public/assets/ss2.png)
+
+#### Artist Page
+![Artist](public/assets/ss3.png)
+
+#### Album Page
+![Album](public/assets/ss4.png)
+
+#### Search Page
+![Search1](public/assets/ss5.png)    
+
+![Search2](public/assets/ss6.png)
+
+#### Podcast Page
+![Podcast](public/assets/ss7.png)
