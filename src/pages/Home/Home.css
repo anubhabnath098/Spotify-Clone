@@ -6,10 +6,23 @@ body{
 .homePage{
     margin:0;
     padding:0;
+    width:100%;
     position:sticky;
     overflow-y:scroll;
     overflow-x: hidden;
 }
+/* Hide scrollbar but still allow scrolling */
+.homePage {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+    overflow: -moz-scrollbars-none;
+  }
+  
+  .homePage::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar in Webkit browsers */
+  }
+  
+
 .Playlist{
     height:90%;
     display: flex;
