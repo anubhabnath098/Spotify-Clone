@@ -45,23 +45,23 @@ export default function Podcasts() {
   },[token, dispatch])
 
   return (
-    <div className="podcast">
-      <div className="PlaylistContainer podcastContainer">
+      <div className="podcast">
+      {podcasts.length > 0 &&(<div className="PlaylistContainer podcastContainer">
           <span className="heading">Your Favourite Podcasts</span>
-          <div className="Playlist">
+          <div className="Playlist Playlist1">
             {podcasts.slice(0,podcasts.length<=5?podcasts.length: 5).map(p=>(
               <Card className="card1" id={p.id} play={p}/>
             ))}
           </div>
-        </div>
-        <div className="PlaylistContainer podcastContainer">
+        </div>)}
+        {podcasts.length>5&&(<div className="PlaylistContainer podcastContainer">
           <span className="heading">Top Podcast Picks for you</span>
-          <div className="Playlist">
+          <div className="Playlist Playlist1">
             {podcasts.slice(6,podcasts.length<=5?podcasts.length:12).map(p=>(
               <Card className="card1" id={p.id} play={p}/>
             ))}
           </div>
-        </div>
+        </div>)}
     </div>
   )
 }

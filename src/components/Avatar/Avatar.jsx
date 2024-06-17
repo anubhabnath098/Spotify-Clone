@@ -10,7 +10,7 @@ export default function Avatar({play, onClick}) {
         <div className="play"><PlayArrowIcon className='play-button'/></div>
       </div>
       <div className="Cardtext">
-        <span className="title1">{play.name}</span>
+        <span className="title1 title3">{play.name}</span>
         <span className="author1">{play.author}</span>
       </div>
     </div>

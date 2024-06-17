@@ -1,11 +1,12 @@
 .card{
     width:20%;
     display: flex;
-    height:300px;
+    height:30%;
     flex-direction: column;
     border-radius: 7px;
     transition:0.3s;
 }
+
 .cardImage{
     height:75%;
     width:100%;
@@ -23,7 +24,9 @@
 }
 
 .Cardtext{
+    height:25%;
     width:93%;
+    padding-bottom:1rem;
     color:white;
     display: flex;
     flex-direction: column;
@@ -37,12 +40,14 @@
     margin-left:10px;
 }
 .author1{
+    height:100px;
+    overflow:hidden;
     margin-left:10px;
     font-weight: 400;
     font-size: 15px;
-    opacity:0.5;
-    
+    opacity:0.5;   
 }
+
 
 .card:hover .play{
     height:50px;

@@ -12,7 +12,7 @@ import { useNavigate } from 'react-router-dom'
 
 export default function Music() {
 
-  const [{ token, playlists, topItems,albums }, dispatch] = useStateProvider();
+  const [{ token, playlists, topItems,albums, followedItems }, dispatch] = useStateProvider();
 
   let navigate = useNavigate();
 
@@ -71,6 +71,33 @@ export default function Music() {
     };
   }, [token, dispatch]);
 
+  useEffect(() => {
+    const getFollowedItems = async () => {
+      try {
+        const response = await axios.get('https://api.spotify.com/v1/me/following?type=artist', {
+          headers: {
+            Authorization: "Bearer " + token,
+            "Content-Type": "application/json",
+          },
+        });
+        const followedItems = response.data.artists.items.map(({ id, images, name }) => ({
+          id,
+          images,
+          name,
+          owner: name,
+        }));
+        console.log(followedItems);
+        dispatch({ type: reducerCases.SET_FOLLOWED_ARTISTS, followedItems });
+      } catch (error) {
+        console.error("Error fetching followed artists:", error);
+      }
+    };
+    getFollowedItems();
+    return () => {
+      console.log("Followed Artist Cleared");
+    };
+  }, [token, dispatch]);
+
 
   useEffect(()=>{
     const getAlbums = async()=>{
@@ -122,7 +149,7 @@ export default function Music() {
       <div className="labelContainer">
           <Label/>
       </div>
-      {playlists&&(<div className="PlaylistContainer">
+      {playlists.length>0 &&(<div className="PlaylistContainer">
           <span className="heading">Your Playlists</span>
           <div className="Playlist">
             {playlists.slice(0,playlists.length<=5?playlists.length:5).map(p=>(
@@ -130,7 +157,15 @@ export default function Music() {
             ))}
           </div>
         </div>)}
-        {albums&&(<div className="AlbumContainer PlaylistContainer">
+        {followedItems.length>0&&(<div className="PlaylistContainer">
+          <span className="heading">Your Followed Artists</span>
+          <div className="Playlist">
+            {followedItems.slice(0,followedItems.length<=5?followedItems.length:5).map(a=>(
+              <Avatar id={a.id} play={a} onClick={()=>goToArtist(a.id)}/>
+            ))}
+          </div>
+        </div>)}
+        {albums.length>0&&(<div className="AlbumContainer PlaylistContainer">
           <span className="heading">Your Favourite Albums</span>
           <div className="Playlist">
             {albums.slice(0,albums.length<=5?albums.length:5).map(a=>(
@@ -139,8 +174,8 @@ export default function Music() {
           </div>
 
         </div>)}
-        {topItems&&(<div className="PlaylistContainer">
-          <span className="heading">Your Favourite Artists</span>
+        {topItems.length>0&&(<div className="PlaylistContainer">
+          <span className="heading">Your Top Artists</span>
           <div className="Playlist">
             {topItems.slice(0,topItems.length<=5?topItems.length:5).map(a=>(
               <Avatar id={a.id} play={a} onClick={()=>goToArtist(a.id)}/>

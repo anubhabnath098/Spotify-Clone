@@ -18,7 +18,7 @@ export default function Home() {
             <div className="frontPage">
               
               <Routes className="route">
-                <Route path="/" element={<div className="homePage"><Topbar className="topbar"/><Music/><Podcasts/></div>}/>
+                <Route path="/" element={<><Topbar className="topbar topbar1"/><div className="homePage"><Music/><Podcasts/></div></>}/>
                 <Route path="/api/music" element={<><Topbar className="topbar"/><Music /></>} />
                 <Route path="/api/podcasts" element={<><Topbar className="topbar"/><Podcasts /></>} />
                 <Route path="/playlist/:playlistId" element ={<PlaylistPage/>}/>

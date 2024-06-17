@@ -7,13 +7,14 @@ export var initialState = {
     topItems:[],
     albums:[],
     podcasts:[],
+    followedItems:[],
     currentTrack:null,
     selectedPlaylistId:null,
     selectedPlaylist:null,
     playerState:false,
     selectedArtistId:null,
     selectedAlbumId:null,
-    selectedsearchTerm:""
+    selectedsearchTerm:"",
 };
 //"2K5JtuXb5hZGzKvMZFsdXf"
 //"7Ln80lUS6He07XvHI8qqHH"
@@ -97,6 +98,12 @@ const reducer = (state, action)=>{
             return{
                 ...state,
                 selectedsearchTerm:action.selectedsearchTerm
+            }
+        }
+        case reducerCases.SET_FOLLOWED_ARTISTS:{
+            return{
+                ...state,
+                followedItems:action.followedItems
             }
         }
         default:

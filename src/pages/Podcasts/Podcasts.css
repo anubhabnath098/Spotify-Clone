@@ -1,5 +1,7 @@
 
 .podcast{
+    margin:0;
+    padding:0;
     position:sticky;
     overflow-y:scroll;
     overflow-x:hidden;
@@ -9,4 +11,10 @@
 }
 .card1{
     overflow:hidden;
+}
+.podcastContainer{
+    overflow:hidden;
+}
+.Playlist1{
+    padding-top:1rem;
 }

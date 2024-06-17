@@ -15,7 +15,8 @@ export default function Login() {
       'user-top-read',
       'user-read-recently-played',
       'user-library-modify',
-      'user-library-read'
+      'user-library-read',
+      'user-follow-read'
     ];
     
     const encodedScope = encodeURIComponent(scope.join(' '));

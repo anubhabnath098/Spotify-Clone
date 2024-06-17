@@ -3,9 +3,7 @@
     height:70px;
     display: flex;
     color:white;
-    
     transition:0.3s;
-
     align-items: center;
 }
 .playlist:hover{
@@ -32,13 +30,16 @@
     flex-direction: column;
     margin-left:10px;
     justify-content: center;
+    overflow:hidden;
 }
 .name{
     font-weight: 600;
+    font-size:0.9rem;
+    overflow:hidden;
 }
 .author{
     font-weight: 400;
-    font-size: 15px;
+    font-size: 0.85rem;
     opacity:0.5;
 }
 
